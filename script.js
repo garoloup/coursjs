@@ -23,3 +23,14 @@ console.log(parseFloat(xstr));
 
 var pos = name.indexOf("r");
 console.log(pos);
+
+var name2 = name.replace("Fred", "Laurent");
+console.log(name2);
+
+var str1 = "Salut";
+var msg = str1 + " " + name2;
+console.log(msg);
+
+
+
+
