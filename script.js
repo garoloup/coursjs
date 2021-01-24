@@ -31,6 +31,37 @@ var str1 = "Salut";
 var msg = str1 + " " + name2;
 console.log(msg);
 
+var nb3 = nb++;
+console.log(nb3);
+
+var QA = (nb3 === 13);
+console.log(QA);
+
+var QA = (nb3 == "12" );
+console.log(QA);
+
+
+switch(nb3)
+    {
+        case 1:
+            console.log("Que 1");
+            break;
+        case 12:
+            console.log("Bien 12");
+            break;
+        default:
+
+    }
+
+function maFct(p1, p2)
+{
+    var res = p1 + p2;
+    return res;
+}
+
+console.log(maFct(nb3,2));
+
+
 
 
 
