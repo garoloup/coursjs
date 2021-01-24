@@ -40,7 +40,7 @@ console.log(QA);
 var QA = (nb3 == "12" );
 console.log(QA);
 
-
+// Cond switch
 switch(nb3)
     {
         case 1:
@@ -53,6 +53,7 @@ switch(nb3)
 
     }
 
+// Fct
 function maFct(p1, p2)
 {
     var res = p1 + p2;
@@ -61,7 +62,29 @@ function maFct(p1, p2)
 
 console.log(maFct(nb3,2));
 
+// Arrays
+var fruits = ["pomme", "poire", "banane"];
+console.log(fruits);
 
+fruits.pop();
+fruits.push("kiwi");
+var panier = fruits.slice(0,2);
+
+for (var i=0; i < fruits.length ; i++)
+    {
+        console.log(fruits[i]);
+    }
+
+for (var i=0; i < panier.length ; i++)
+    {
+        console.log("panier["+i+"]="+panier[i]);
+    }
+
+var armoire = ["pomme", 12, true, [2,"deux"]];
+for (var i=0; i < armoire.length ; i++)
+    {
+        console.log(armoire[i]);
+    }
 
 
 
