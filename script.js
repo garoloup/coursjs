@@ -79,6 +79,10 @@ for (var i=0; i < panier.length ; i++)
     {
         console.log("panier["+i+"]="+panier[i]);
     }
+for (var i in panier)
+    {
+        console.log("panier2["+i+"]="+panier[i]);
+    }
 
 var armoire = ["pomme", 12, true, [2,"deux"]];
 for (var i=0; i < armoire.length ; i++)
@@ -86,5 +90,40 @@ for (var i=0; i < armoire.length ; i++)
         console.log(armoire[i]);
     }
 
+// Objet
+
+var dog = {
+    name: "Gabin",
+    color: "white",
+    age: 4
+};
+console.log(dog);
+console.log(dog.age);
+console.log(dog["name"]);
+
+for(var prop in dog) {
+    console.log(dog[prop]);
+}
+
+var cat = new Object();
+cat.name = "Shag";
+cat.age= 9;
+cat.couleur = "black";
+
+for(var prop in cat) {
+    console.log(cat[prop]);
+}
+
+dog.aboyer=function(nb)
+{
+    while (nb > 0)
+        {
+        console.log("waf waf !");
+
+        nb--;
+        }
+};
+
+dog.aboyer(2);
 
 
