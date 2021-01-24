@@ -126,4 +126,23 @@ dog.aboyer=function(nb)
 
 dog.aboyer(2);
 
+function Dog(name,color, age)
+{
+    this.name = name;
+    this.color = color;
+    this.age = age;
+    this.aboyer=function(nb)
+    {
+        while (nb > 0)
+            {
+            console.log(this.name+" waf waf !");
 
+            nb--;
+            }
+    };
+
+}
+
+var medor = new Dog("Dicky","brown", 15);
+console.log(medor);
+medor.aboyer(3);
